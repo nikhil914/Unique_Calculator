@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.nik.uniquecalculator.viewmodel.LoginViewModel" />
+        <variable
+            name="clickHandler"
+            type="com.nik.uniquecalculator.bottomsheet.LoginSheet.ClickHandler" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inputId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/background_edit_text"
+            android:hint="ID"
+            android:text="@={model.idLIveData}"
+            android:imeOptions="actionDone|actionSend|actionGo"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/inputId2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="@={model.passwordLiveData}"
+            android:background="@drawable/background_edit_text"
+            android:hint="Password"
+            android:imeOptions="actionDone|actionSend|actionGo"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Note : Id=a@a.com password =123456"
+            android:paddingStart="10dp"/>
+
+
+        <Button
+            android:id="@+id/calButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{clickHandler::login}"
+            android:layout_margin="20dp"
+            android:text="Login"
+            app:layout_constraintTop_toBottomOf="@+id/inputId" />
+
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "578472840",
+    "project_id": "mad-calculator",
+    "storage_bucket": "mad-calculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578472840:android:2477c9916ad7a4f13c883d",
+        "android_client_info": {
+          "package_name": "com.nik.uniquecalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578472840-45ovpgrqatcihr0c7klln9c06httrs7b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nik.uniquecalculator",
+            "certificate_hash": "a999e8d4f72ac0fc4ecf32c40cd59ab871d092d1"
+          }
+        },
+        {
+          "client_id": "578472840-oo5vogfm6s2548hpc5np5ss88tg8epuq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVgT_ty1c5vzu6kEuU3WWzE5rsCHVRpzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578472840-oo5vogfm6s2548hpc5np5ss88tg8epuq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
